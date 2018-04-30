@@ -23,15 +23,19 @@ Or install it yourself as:
 ## Usage
 
 Call gem
+
 ```require 'TicTacToe_Col'```
 
 Create an instance of the main class `Main`
+
 ```main = Main.new```
 
 run `start` method
+
 ```main.start```
 
 Or simply
+
 ```Main.new.start```
 
 ## Development
