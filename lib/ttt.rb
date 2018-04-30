@@ -10,6 +10,10 @@ class TicTacToe
     @player_b_count = 0
     print "\nCreate Board, What length do you want?: ".cyan
     board_length = gets.chomp.to_i
+    if board_length.nil? || board_length == 0
+      puts "Invalid element, try again"
+      start_game(player)
+    end
     board = Array.new(board_length){|i| Array.new(board_length){|j| board_length*i+j+1 } }
     board_size = board_length * board_length
     puts "Board created!!!... \n".green
